@@ -1,3 +1,390 @@
-/* Your styles go here */
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$heading-font: "Lora", serif;
+$body-font: "Montserrat", sans-serif;
+
+/* COLORS */
+$primary:       #171211;
+$secondary:     #8D6E68;
+$success:       #D0C4B3;
+$info:          #CDB594;
+$warning:       #705C48;
+$danger:        #3A2D2B;
+$light:         #FAFAFA;
+$dark:          #3A2D2B;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+/* BOOTSTRAP */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+/* BODY */
+
+body{
+    font-family: $body-font;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: $light;
+    color: $primary;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* HEADERS + PARAGRAPHS */
+
+h1{
+    font-family: $heading-font;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: normal;
+}
+
+h2{
+    font-family: $heading-font;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: normal;
+}
+
+h3{
+    font-family: $body-font;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: normal;
+
+}
+
+p{
+    font-family: $body-font;
+    font-size: 16px;
+}
+
+/* HEADINGS - MEDIUM SCREEN*/
+
+@media (min-width: 767.98px) {
+    h1{
+        font-size: 96px;
+    }
+
+    h2{
+        font-size: 48px;
+    }
+
+    h3{
+        font-size: 24px;
+    }
+}
+
+/* HEADINGS - LARGE SCREEN*/
+
+@media (min-width: 991.98px) {
+    h1{
+        font-size: 128px;
+    }
+
+    h2{
+        font-size: 50px;
+    }
+
+    h3{
+        font-size: 32px;
+    }
+}
+
+/* LINKS */
+
+.link{
+    a {
+        font-size: .9rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding:.5rem 0;
+        padding-right: .5rem;
+        border-bottom: 1px solid $light;
+    }
+}
+
+.link a:hover{
+    color: $primary;
+    border-color: $primary;
+}
+
+.link-light{
+    a {
+        color: $light;
+        font-size: .9rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding:.5rem 0;
+        padding-right: .5rem;
+        border-bottom: 1px solid $primary;
+    }
+}
+
+.link-light a:hover{
+    border-color: $light;
+}
+
+/* NAVIGATION */
+
+nav{
+    font-family: $body-font;
+
+    .navbar-brand{
+        font-family: $heading-font;
+        font-size: 1.5rem;
+        letter-spacing: .2rem;
+    }
+
+    .nav-link{
+
+        &:hover, &:active{
+            border-bottom: 1px solid $primary;
+        }
+    }
+
+    .active-page{
+        border-bottom: 1px solid $primary;
+    }
+}
+
+/* FOOTER */
+footer{
+    border-top: 1px solid $light;
+}
+
+
+/* HOME PAGE */
+
+/* BODY */
+
+#home-body{
+    background-repeat: no-repeat;
+    background-image: url("../images/banner-1.png");
+    background-attachment: fixed;
+    background-position: center top;
+    background-size: 105%;
+}
+
+/* BANNER */
+#banner{
+
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    #banner-header{
+        display: flex;
+        justify-content: center;
+
+        h1{
+            span{
+                padding-left: 1.75rem;
+            }
+        }
+    }
+
+    #banner-text{
+        display: flex;
+        align-items: end;
+        justify-content: end;
+        margin-top: 2rem;
+
+        ul{
+            list-style: none;
+
+            li{
+                color: $primary;
+                text-transform: uppercase;
+                margin: .5rem;
+                letter-spacing: .1rem;
+                text-align: end;
+
+                a.link-2{
+                    font-family: $heading-font;
+                    font-size: 1rem;
+                    text-transform: capitalize;
+                    text-decoration: none;
+                    font-style: italic;
+                }
+                a.link-2:hover{
+                    border-bottom: 1px solid $primary;
+                }
+            }
+        }
+    }
+}
+
+/* TESTIMONIALS */
+#testimonials{
+    #testimonial-text{
+        p{
+            font-family: $body-font;
+            text-transform: uppercase;
+            font-size: 1.5rem;
+        }
+    }
+
+    .card{
+        height: 250px;
+        .card-text{
+            font-family: $body-font;
+            text-transform: uppercase;
+        }
+    }
+}
+
+/* HOMEPAGE - MD */
+
+@media (min-width: 500px) {
+
+    /* BANNER */
+    #banner{
+        height: 100vh;
+        
+        #banner-header{
+            display: flex;
+            justify-content: center;
+
+            h1{
+                span{
+                    padding-left: 5rem;
+                }
+            }
+        }
+        
+        #banner-text{
+            display: flex;
+            align-items: end;
+            justify-content: flex-end;
+
+            ul{
+                li{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}
+
+/* HOMEPAGE - LG*/
+
+@media (min-width: 991.98px) {
+
+    #home-body{
+        background-repeat: no-repeat;
+        background-image: url("../images/banner-1.png");
+        background-attachment: scroll;
+        background-position: right top;
+        background-size: 60%;
+    }
+
+    /* BANNER */
+    #banner{
+        height: 100vh;
+
+        #banner-header{
+
+            display: flex;
+            justify-content: start;
+
+            h1{
+                margin-left: 2rem;
+                span{
+                    padding-left: 10rem;
+                }
+            }
+        }
+
+        ul{
+            margin-top: 2rem;
+            li{
+                font-size: 1.5rem;
+            }
+        }
+    }
+
+    /* ABOUT ME */
+
+    /* PORTFOLIO */
+    #home-portfolio{
+
+        #portfolio-text{
+            p{
+                font-family: $body-font;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+
+
+/* PORTFOLIO */
+#portfolio-gallery{
+    .card{
+        border: 1px solid $primary;
+        background-color: $light;
+    }
+}
+
+/* CONTACT PAGE */
+
+/* BODY */
+
+
+
+
+/* FAQ PAGE */
+
+/* ACCORDION */
+
+.accordion{
+
+    .accordion-item{
+        font-family: $body-font;
+        background-color: $light;
+
+        .accordion-header{
+            border-bottom: 1px solid $primary;
+
+            .accordion-button{
+                background-color: $light;
+                color: $primary;
+                padding: 3rem .5rem;
+                font-family: $body-font;
+                text-transform: uppercase;
+            }
+        }
+
+        .accordion-body{
+            background-color: $light;
+
+            .list-group{
+                font-size: .9rem;
+
+                .list-group-item{
+                    background-color: $light;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
