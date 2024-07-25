@@ -11,9 +11,9 @@
   </head>
 
   <body id="home-body">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary text-uppercase sticky-top mx-2">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary text-uppercase bg-light sticky-top py-3">
       <div class="container-fluid">
-        <a class="navbar-brand active" href="index.html" aria-current="page">Shelby Bayles</a>
+        <a class="navbar-brand active ms-3" href="index.html" aria-current="page">Shelby Bayles</a>
         <button
           class="navbar-toggler"
           type="button"
@@ -40,80 +40,82 @@
           </span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-          <div class="navbar-nav nav-underline text-center d-flex align-items-center">
-            <a class="nav-link mx-lg-4" href="portfolio.html">Portfolio</a>
-            <a class="nav-link mx-lg-4" href="contact.html">Contact</a>
-            <a class="nav-link mx-lg-4" href="faq.html">FAQ's</a>
-            <a class="nav-link mx-lg-4" href="https://app.acuityscheduling.com/catalog.php?owner=23350591"
-              >Gift Certificates</a
+          <div class="navbar-nav nav-underline d-flex align-items-center">
+            <a class="nav-link mx-lg-3 active-page" href="index.html">Home</a>
+            <a class="nav-link mx-lg-3" href="portfolio.html">Portfolio</a>
+            <a class="nav-link mx-lg-3" href="contact.html">Contact</a>
+            <a class="nav-link mx-lg-3" href="faq.html">FAQ's</a>
+            <a class="nav-link mx-lg-3" href="https://app.acuityscheduling.com/catalog.php?owner=23350591" target="_blank" rel="noopener noreferrer"
+              >Gift Cards</a
             >
-            <a class="nav-link mx-lg-4" href="https://bohemycollective.as.me/schedule.php">Book Now</a>
+            <a class="nav-link mx-lg-3" href="https://bohemycollective.as.me/schedule.php" target="_blank" rel="noopener noreferrer">Book Now</a>
           </div>
         </div>
       </div>
     </nav>
 
-    <div class="container-fluid" id="banner">
-      <div class="container-fluid">
-        <div class="" id="banner-header">
-          <h1 class="">Hi,<br /><span>I'm Shelby</span></h1>
+    <div class="container-fluid p-3" id="home-banner">
+
+      <div class="text-center py-5">
+        <h1 class="text-uppercase">Shelby Bayles</h1>
+        <div class="text-uppercase">
+          Tattoo Artist | Ogden, Utah
+        </div>
+      </div>
+
+      <div class="row py-3 border-bottom border-top border-dark mb-3 mx-5" id="banner-content">
+
+        <div class="col-12 col-md-4" id="banner-1">
+          <a href="portfolio.html">
+            <img src="images/home/banner-2.png" alt="" width="100%">
+            <h3 class="pt-3 text-center">Recent Work</h3>
+          </a>
         </div>
 
-        <div id="banner-text">
-          <ul>
-            <li>Fine Line Tattoo Artist</li>
-            <li>Ogden, Utah</li>
-            <li class="">
-              <a href="portfolio.html" class="link-2 px-1 pb-1">
-                View My Recent Work
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="20"
-                  height="20"
-                  fill="currentColor"
-                  class="bi bi-arrow-right ms-1 pb-1"
-                  viewBox="0 0 16 16"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"
-                  />
-                </svg>
-              </a>
-            </li>
+        <div class="col-12 col-md-4" id="banner-2">
+          <a href="contact.html">
+            <img src="images/home/banner-1.png" alt="" width="100%">
+            <h3 class="pt-3 text-center">Get In Touch</h3>
+          </a>
+        </div>
+
+        <div class="col-12 col-md-4" id="banner-3">
+          <a href="https://bohemycollective.as.me/schedule.php">
+            <img src="images/home/banner-3.png" alt="" width="100%">
+            <h3 class="pt-3 text-center">Book Now</h3>
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="container-fluid" id="about-me">
+      <div class="col-10 mx-auto">
+        <div class="row py-3">
+        <div class="col-12 col-md-6 mx-auto">
+            <img src="images/home/about.png" alt="" width="100%">
+        </div>
+
+        <div class="col-12 col-md-6 my-auto" id="about-me-text">
+          <div class="" id="about-me-header">
+            <h2 class="text-center pt-3">About Me</h2>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item bg-light border-dark text-uppercase py-3">I have 4+ years of tattooing experience</li>
+            <li class="list-group-item bg-light border-dark text-uppercase py-3">I was Born and raised in Utah</li>
+            <li class="list-group-item bg-light border-dark text-uppercase py-3">I love being a wife and mom of 2</li>
+            <li class="list-group-item bg-light border-dark text-uppercase py-3">My passion is bringing my clients vision to life</li>
           </ul>
         </div>
       </div>
-    </div>
 
-    <div class="container-fluid bg-light py-5" id="about-me">
-      <div class="row py-5">
-        <div class="col-12 col-md-4">
-          <img src="images/aboutme-img.png" width="100%" alt=""/>
-        </div>
-
-        <div class="col-12 col-md-6 bg-light mx-auto" id="about-me-text">
-          <div class="" id="about-me-header">
-            <h2 class="py-2">About Me</h2>
-          </div>
-          <p>
-            I've cultivated a passion for artistry that has defined my journey as a tattoo artist for over eight years. 
-            I specialize in the delicate intricacies of fine line work, the bold contrasts of black and white designs, 
-            and the expansive beauty of large floral tattoos. I've honed my craft to bring your visions to life.
-          </p>
-          <p>
-            I was born and raised in Utah. Beyond the studio walls, I find inspiration in the natural beauty of Utah's outdoors, 
-            often venturing into its majestic landscapes with my husband and my two children.
-            While artistry fuels my professional life, family and nature nurture my soul, creating a balanced tapestry 
-            that defines who I am both inside and outside of the studio.
-          </p>
-        </div>
       </div>
     </div>
 
-    <div class="container-fluid bg-light" id="home-portfolio">
-      <div class="row py-5">
-        <div class="col-12 col-md-6 d-flex align-items-center justify-content-lg-center" id="portfolio-text">
+    <div class="container-fluid bg-light py-3" id="home-portfolio">
+      <div class="row py-3 border-top border-dark mx-3">
+        <div class="col-12 col-md-6 d-flex align-items-center" id="portfolio-text">
           <div class="order-lg-2">
             <div class="pb-lg-3">
               <h2 class="text-primary">Recent Art</h2>
@@ -145,27 +147,27 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <a href="portfolio.html">
-                  <img src="images/mirror.png" class="d-block w-100" alt="..." />
+                  <img src="images/portfolio/line/line-17.png" class="d-block w-100" alt="..." />
                 </a>
               </div>
               <div class="carousel-item">
                 <a href="portfolio.html">
-                  <img src="images/mirror.png" class="d-block w-100" alt="..." />
+                  <img src="images/portfolio/script/script-3.png" class="d-block w-100" alt="..." />
                 </a>
               </div>
               <div class="carousel-item">
                 <a href="portfolio.html">
-                  <img src="images/mirror.png" class="d-block w-100" alt="..." />
+                  <img src="images/portfolio/realistic/realistic-17.png" class="d-block w-100" alt="..." />
                 </a>
               </div>
               <div class="carousel-item">
                 <a href="portfolio.html">
-                  <img src="images/mirror.png" class="d-block w-100" alt="..." />
+                  <img src="images/portfolio/line/line-13.png" class="d-block w-100" alt="..." />
                 </a>
               </div>
               <div class="carousel-item">
                 <a href="portfolio.html">
-                  <img src="images/mirror.png" class="d-block w-100" alt="..." />
+                  <img src="images/portfolio/floral/floral-1.png" class="d-block w-100" alt="..." />
                 </a>
               </div>
             </div>
@@ -193,7 +195,7 @@
     </div>
 
 
-    <footer class="text-primary py-3 bg-light">
+    <footer class="text-primary py-3 bg-light border-top border-dark">
       <div class="container-fluid">
         <div class="row d-flex align-content-start">
           <div class="col-10"><h2>Shelby Bayles</h2></div>
@@ -244,7 +246,7 @@
             </div>
           </div>
         </div>
-        <div class="row pb-5">
+        <div class="row pb-2">
           <div class="col text-center"><span>&copy;</span> Shelby Bayles 2024</div>
         </div>
       </div>
