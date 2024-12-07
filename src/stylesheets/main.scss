@@ -1,3 +1,290 @@
-/* Your styles go here */
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+$heading-font: "Lora", serif;
+$body-font: "Montserrat", sans-serif;
+
+/* COLORS */
+$primary:       #171211;
+$secondary:     #8D6E68;
+$success:       #D0C4B3;
+$info:          #CDB594;
+$warning:       #705C48;
+$danger:        #3A2D2B;
+$light:         #FAFAFA;
+$dark:          #3A2D2B;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+/* BOOTSTRAP */
 @import "bootstrap/scss/bootstrap.scss";
 @import "bootstrap-icons/font/bootstrap-icons.css";
+
+/* BODY */
+
+body{
+    font-family: $body-font;
+    font-weight: 400;
+    font-size: 16px;
+    background-color: $light;
+    color: $primary;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* HEADERS + PARAGRAPHS */
+
+h1{
+    font-family: $heading-font;
+    font-size: 50px;
+    font-weight: normal;
+}
+
+h2{
+    font-family: $heading-font;
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: normal;
+}
+
+h3{
+    font-family: $body-font;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: normal;
+
+}
+
+p{
+    font-family: $body-font;
+    font-size: 16px;
+}
+
+@media (min-width: 991px) {
+    h1{
+        font-size: 75px;
+    }
+}
+
+
+
+/* LINKS */
+
+.link{
+    a {
+        font-size: .9rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding:.5rem 0;
+        padding-right: .5rem;
+        border-bottom: 1px solid $light;
+    }
+}
+
+.link a:hover{
+    color: $primary;
+    border-color: $primary;
+}
+
+.link-2{
+    a {
+        font-size: 1rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding:.5rem 0;
+        padding-right: .5rem;
+    }
+}
+
+.link-2 a:hover{
+    color: $primary;
+    border-bottom: 1px solid $primary;
+}
+
+.link-light{
+    a {
+        color: $light;
+        font-size: .9rem;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding:.5rem 0;
+        padding-right: .5rem;
+        border-bottom: 1px solid $primary;
+    }
+}
+
+.link-light a:hover{
+    border-color: $light;
+}
+
+/* NAVIGATION */
+
+nav{
+    font-family: $body-font;
+
+    .navbar-brand{
+        font-family: $heading-font;
+        font-size: 1.5rem;
+        letter-spacing: .2rem;
+    }
+
+    .nav-link{
+        font-size: .9rem;
+        border-bottom: 1px solid $light;
+
+        &:hover, &:active{
+            border-bottom: 1px solid $primary;
+        }
+    }
+
+    .active-page{
+        border-bottom: 1px solid $primary;
+    }
+}
+
+/* FOOTER */
+footer{
+    border-top: 1px solid $light;
+}
+
+
+/* HOME PAGE */
+
+/* BANNER */
+#home-banner{
+
+    #banner-content{
+            #banner-1{
+                padding: 2rem;
+            }
+            #banner-2{
+                padding: 2rem;
+            }
+            #banner-3{
+                padding: 2rem;
+            }
+
+            a {
+                text-decoration: none;
+            }
+        }
+}
+
+#testimonials{
+    ul{
+        list-style: none;
+        li{
+            font-family: $heading-font;
+            font-style: italic;
+            font-size: 1.25rem;
+        }
+    }
+}
+
+/* HOMEPAGE - MD */
+
+@media (min-width: 768px) {
+
+    /* BANNER */
+    #home-banner{
+
+        #banner-content{
+
+            #banner-1{
+                border-right: 1px solid $dark;
+            }
+            #banner-3{
+                border-left: 1px solid $dark;
+            }
+        }
+    }
+}
+
+/* ABOUT ME */
+
+/* PORTFOLIO */
+#home-portfolio{
+
+    #portfolio-text{
+            p{
+                font-family: $body-font;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+            }
+        }
+}
+
+#portfolio-filter{
+    ul{
+        li{
+            a{
+                border-bottom: 1px solid $light;
+                font-size: .9rem;
+                &:hover{
+                    border-bottom: 1px solid $dark;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* PORTFOLIO */
+#portfolio-gallery{
+    .card{
+        border: 1px solid $primary;
+        background-color: $light;
+    }
+}
+
+
+/* FAQ PAGE */
+
+/* ACCORDION */
+
+.accordion{
+
+    .accordion-item{
+        font-family: $body-font;
+        background-color: $light;
+
+        .accordion-header{
+            border: none;
+
+            .accordion-button{
+                background-color: $light;
+                color: $primary;
+                padding: 3rem .5rem;
+                font-family: $body-font;
+                text-transform: uppercase;
+            }
+        }
+
+        .accordion-body{
+            background-color: $light;
+
+            .list-group{
+                font-size: .9rem;
+
+                .list-group-item{
+                    background-color: $light;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
